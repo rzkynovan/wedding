@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+header {
+    font-family: 'Alkatra', cursive;
+}
+
+
+.hero-text{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-img{
+    animation: bouncing 3s infinite;
+}
+
+@keyframes bouncing{
+    0%{
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(10px);
+      }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+.btn-hero:hover .hero-icon{
+    transform: translateX(10px);
+}
